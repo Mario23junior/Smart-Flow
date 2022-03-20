@@ -1,21 +1,21 @@
-## Status
-**PRONTO / EM DESENVOLVIMENTO / MANTER**
+## Status :telescope:
+**PRONTO :heavy_check_mark: | EM DESENVOLVIMENTO :hammer: | MANTER:pushpin: | bug :bug:**
 
-## Descrição
+## Descrição :pencil2:
 
 
 ## Todos
-- [] Testes
-- [] Documentação
+- [] Testes :umbrella:
+- [] Documentação :page_with_curl:
 
-## Etapas para testar ou reproduzir
+## Etapas para testar ou reproduzir 
 
-Primeiro execute o maven 
+:hammer: Primeiro execute o maven :hammer:
  
 ```
  mvn package
 ```
-Em seguida abra seu terminal ou na pasta no projeto faça
+## Em seguida abra seu terminal ou na pasta no projeto faça :swimmer:
 
 ```
 java -jar smartFlow-1.0-SNAPSHOT.jar
