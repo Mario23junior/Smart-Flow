@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.br.api.smartFlow.model.Categoria;
 
 @Repository
-public interface categoriaRepository extends JpaRepository<Categoria, Long>{
+public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 
 }
