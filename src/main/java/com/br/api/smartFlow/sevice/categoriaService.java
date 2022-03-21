@@ -6,14 +6,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.br.api.smartFlow.model.Categoria;
-import com.br.api.smartFlow.repositrys.categoriaRepository;
+import com.br.api.smartFlow.repositrys.CategoriaRepository;
 
 @Service
 public class categoriaService {
   
-	private categoriaRepository repo;
+	private CategoriaRepository repo;
 	
-	public categoriaService(categoriaRepository repo) {
+	public categoriaService(CategoriaRepository repo) {
 		this.repo = repo;
  	}
 	
