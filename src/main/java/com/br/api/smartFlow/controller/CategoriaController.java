@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.br.api.smartFlow.model.Categoria;
 import com.br.api.smartFlow.sevice.categoriaService;
 
 @RestController
@@ -20,7 +21,7 @@ public class CategoriaController {
 	
 	@GetMapping("{id}")
 	public ResponseEntity<?> find(@PathVariable Long id) {
-		ResponseEntity<?> findId = service.buscar(id);
-		return findId;
+		Categoria findId = service.buscar(id);
+		return ResponseEntity.ok().body(findId);
  	}
 }

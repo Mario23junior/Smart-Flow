@@ -2,9 +2,9 @@ package com.br.api.smartFlow.sevice;
 
 import java.util.Optional;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.br.api.smartFlow.exceptions.ObjectNotFoundException;
 import com.br.api.smartFlow.model.Categoria;
 import com.br.api.smartFlow.repositrys.CategoriaRepository;
 
@@ -17,8 +17,9 @@ public class categoriaService {
 		this.repo = repo;
  	}
 	
-	public ResponseEntity<?> buscar(Long id) {
+	public Categoria buscar(Long id) {
  		Optional<Categoria> fetchId  = repo.findById(id);
-		return ResponseEntity.ok().body(fetchId);
+		return fetchId.orElseThrow(() -> new ObjectNotFoundException("O id "+ id +" de identificação de "
+				+ "categoria não encontrada"));
 	}
 }
